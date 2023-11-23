@@ -32,15 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t sz)
 	dst[dstlen + i] = '\0';
 	return (dstlen + srclen);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main()
-{	
-//	char *s = "ilyass";
-	char *d = "allo";
-
-	printf("%lu\n",ft_strlcat(NULL, "", 0));
-	return 0;
-}
-*/

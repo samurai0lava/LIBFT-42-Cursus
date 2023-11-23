@@ -25,27 +25,3 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (tmp);
 }
-/*
-int main()
-{
-    int data1 = 13;
-    int data2 = 14;
-    int data3 = 19;
-
-    t_list *node1 = isnew(&data1);
-    t_list *node2 = isnew(&data2); 
-    t_list *node3 = isnew(&data3);
-    node3->next = NULL;
-    node2->next = node3;
-    node1->next = node2;
-
-
-    t_list *dataout = ft_lstlast(node1);
-    printf("%p\n", dataout->content);
-    printf("%p\n", &data3);
-    free(node1);
-    free(node2);
-    free(node3);
-    return 0;
-}
-*/

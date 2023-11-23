@@ -34,12 +34,3 @@ void	ft_putnbr_fd(int nb, int fd)
 		ft_putchar_fd(nb + '0', fd);
 	}
 }
-/*
-#include <fcntl.h>
-int main()
-{
-	int fd = open("example.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-	ft_putnbr_fd(-2147483648, fd);
-	close(fd);
-}
-*/

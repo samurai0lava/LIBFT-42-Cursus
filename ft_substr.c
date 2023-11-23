@@ -36,11 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-/*
- int main()
- {
- 	const char *S = NULL;
- 	char *lol = ft_substr(S, 1, 1);
- 	printf("%s\n", lol);	
- }
- */
