@@ -58,7 +58,7 @@ static char	*ft_strndup(const char *s, size_t n)
 	return (result);
 }
 
-static int	ft_free_arr(char **s, int i)
+static char	**ft_free_arr(char **s, int i)
 {
 	while (i--)
 		free(s[i]);
@@ -87,7 +87,7 @@ char	**ft_split(char const *s, char c)
 		wordlen = ft_wordlen(s, c);
 		result[i] = ft_strndup(s, wordlen);
 		if (!(result[i]))
-			ft_free_arr(result, i - 1);
+			return (ft_free_arr(result, i - 1));
 		s += wordlen;
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: iouhssei <iouhssei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 14:01:15 by iouhssei          #+#    #+#             */
-/*   Updated: 2023/11/23 14:02:10 by iouhssei         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:41:53 by iouhssei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	new_len;
 	char	*new_str;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	suf_len = 0;
 	pre_len = 0;

@@ -22,8 +22,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_allocated = nmemb * size;
 	space_allocated = malloc(size_allocated);
 	if (space_allocated != NULL)
-	{
-		ft_memset(space_allocated, 0, size_allocated);
-	}
+		ft_bzero(space_allocated, size_allocated);
 	return (space_allocated);
 }
