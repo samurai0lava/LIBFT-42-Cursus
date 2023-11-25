@@ -3,11 +3,13 @@
 
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-    t_list *new_list = NULL;
-    t_list *current_node = NULL;
+    t_list  *new_list;
+    t_list  *current_node;
 
     if(f == NULL || del == NULL)
         return(NULL);
+    new_list = NULL;
+    current_node = NULL;
     while (lst)
     {
         void    *new_content;
